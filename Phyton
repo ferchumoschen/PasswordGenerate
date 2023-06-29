@@ -1,0 +1,15 @@
+import random
+import string
+
+def generar_contrasena(longitud):
+    caracteres = string.ascii_letters + string.digits 
+    contrasena = ''.join(random.choice(caracteres) for _ in range(longitud))
+    return contrasena
+
+longitud_deseada = 8 #Longitud a eleccion. 
+contrasena_generada = generar_contrasena(longitud_deseada)
+
+contrasena_generada
+print("8-digit password automatically:", contrasena_generada)
+# Generador automatico de contraseñas.
+# By: Fernando Moschen 29/06/2023
